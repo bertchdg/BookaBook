@@ -4,10 +4,11 @@
 <div class="container">
   <% @books = Book.all %>
   <% @books.each do |book| %>
-    <div class="card-book">
+
+      <div class="card-book" class="d-flex align-items-center" >
       <%= link_to book_path(book), class:"text-decoration-none" do %>
-      <div class="card-category" data-aos="zoom-in">
-      <%= book.title %>
+        <%= book.title %>
+        <%= book.author %>
       <% end %>
     </div>
       <% end %>
