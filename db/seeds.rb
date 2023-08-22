@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 
 
-User.create!(email: "brett@bookabook.com", password: "password")
-User.create!(email: "nadja@bookabook.com", password: "password")
-User.create!(email: "irene@bookabook.com", password: "password")
-User.create!(email: "nicole@bookabook.com", password: "password")
+User.create!(email: "brett@bookabook.com", password: "password", username: "brettbook")
+User.create!(email: "nadja@bookabook.com", password: "password", username: "nadjabook")
+User.create!(email: "irene@bookabook.com", password: "password", username: "irenekichan")
+User.create!(email: "nicole@bookabook.com", password: "password",username: "nicolebook")
 
 Book.create!(name: "Harry Potter", author: "JK Rowling", user_id: "2")
 Book.create!(name: "Klara and the Sun", author: "Kazuo Ishiguro", user_id: "1")
