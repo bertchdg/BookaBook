@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :books
+  has_many :books, dependent: :destroy
   validates :username, :email, presence: true, uniqueness: true
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

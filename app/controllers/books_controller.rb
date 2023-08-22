@@ -6,17 +6,18 @@ class BooksController < ApplicationController
 
   def show
   end
-  # hola this is testing branch
+
   def new
     @book = Book.new
   end
 
   def create
     @book = Book.new(book_params)
+    @book.user = current_user
     if @book.save
       redirect_to book_path(@book)
     else
-      render 'book/new', status: :unprocessable_entity
+      render "books", status: :unprocessable_entity
     end
   end
 end
@@ -28,5 +29,5 @@ def set_book
 end
 
 def book_params
-  params.require(:book).permit(:name, :author)
+  params.require(:book).permit(:title, :author, :genre)
 end

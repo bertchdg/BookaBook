@@ -10,7 +10,7 @@ User.create!(email: "nadja@bookabook.com", password: "password", username: "nadj
 User.create!(email: "irene@bookabook.com", password: "password", username: "irenekichan")
 User.create!(email: "nicole@bookabook.com", password: "password",username: "nicolebook")
 
-Book.create!(name: "Harry Potter", author: "JK Rowling", user_id: "2")
-Book.create!(name: "Klara and the Sun", author: "Kazuo Ishiguro", user_id: "1")
-Book.create!(name: "The Never-Ending Story", author: "Michael Ende", user_id: "3")
-Book.create!(name: "Tomorrow and Tomorrow and Tomorrow", author: "Gabrielle Zevin", user_id: "4")
+Book.create!(title: "Harry Potter", author: "JK Rowling", user_id: "2", genre: "fantasy")
+Book.create!(title: "Klara and the Sun", author: "Kazuo Ishiguro", user_id: "1", genre: "scifi")
+Book.create!(title: "The Never-Ending Story", author: "Michael Ende", user_id: "3", genre: "fantasy")
+Book.create!(title: "Tomorrow and Tomorrow and Tomorrow", author: "Gabrielle Zevin", user_id: "4", genre: "fiction")
