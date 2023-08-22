@@ -1,6 +1,14 @@
 <h1>Books#index</h1>
 <% @books = Book.all %>
-  <% @books.each do |book| %>
-    <%= book.title %>
-  <% end %>
-<p>This should display the landing page for all users visiting our site, with a list of all sorts of books.</p>
+  <div class="row">
+    <% @books.each do |book| %>
+      <div class="container">
+        <%= link_to book_path(book), class:"text-decoration-none" do %>
+          <div class="card-category" data-aos="zoom-in">
+            <%= book.name %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
