@@ -1,0 +1,30 @@
+.icon {
+  font-size: 80px;
+}
+
+.footer {
+	// display: flex;
+  width: auto;
+  height: 100px;
+  background-color: linear-gradient(to top, rgb(225, 255, 223), white);
+  border-top: 3px solid black;
+	// align-items: center;
+	// justify-content: space-between;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+  // margin: 0;
+  // padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 20px;
+}

@@ -8,7 +8,7 @@
 User.create!(email: "brett@bookabook.com", password: "password", username: "brettbook")
 User.create!(email: "nadja@bookabook.com", password: "password", username: "nadjabook")
 User.create!(email: "irene@bookabook.com", password: "password", username: "irenekichan")
-User.create!(email: "nicole@bookabook.com", password: "password",username: "nicolebook")
+User.create!(email: "nicole@bookabook.com", password: "password", username: "nicolebook")
 
 Book.create!(title: "Harry Potter", author: "JK Rowling", user_id: "2", genre: "fantasy")
 Book.create!(title: "Klara and the Sun", author: "Kazuo Ishiguro", user_id: "1", genre: "scifi")

@@ -1,14 +1,16 @@
 <h1>Books#show</h1>
+
 <div>
-<h5>Title:</h5>
-<p><%= @book.title %></p>
-<h5>Author: </h5>
-<p><%= @book.author %></p>
-<h5>Genre: </h5>
-<p><%= @book.genre %></p>
+  <h5>Title:</h5>
+  <p><%= @book.title %></p>
+  <h5>Author: </h5>
+  <p><%= @book.author %></p>
+  <h5>Genre: </h5>
+  <p><%= @book.genre %></p>
 </div>
 
 <div class="btn btn-warning"><%= link_to "Book this Book" %></div>
+
 <div class="card-body p-1 m-2">
     <%= link_to "Back to books", root_path %>
   </div>
