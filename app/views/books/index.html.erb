@@ -7,8 +7,9 @@
     <div class="card-book">
       <%= link_to book_path(book), class:"text-decoration-none" do %>
       <div class="card-category" data-aos="zoom-in">
-      <%= book.name %>
+      <%= book.title %>
+      <% end %>
     </div>
-   <% end %>
+  <% end %>
 </div>
 <%= link_to "Add a new Book!", new_book_path, class:"btn btn-warning" %>
