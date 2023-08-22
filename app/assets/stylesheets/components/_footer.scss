@@ -1,30 +1,35 @@
-.icon {
-  font-size: 80px;
-}
-
-.footer {
-	// display: flex;
+// Footer, Bottom, Quick Links, Home/Map/Search/Bookmarks
+#footer {
+  // display: flex;
+  position: sticky;
+  bottom: 0;
   width: auto;
-  height: 100px;
-  background-color: linear-gradient(to top, rgb(225, 255, 223), white);
-  border-top: 3px solid black;
-	// align-items: center;
-	// justify-content: space-between;
+  height:fit-content;
+  background-color: white;
+  border-top: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px -3px 3px white;
+  // align-items: center;
+  // justify-content: space-between;
 }
 
-.footer a {
+#footer a {
   text-decoration: none;
-  color: black;
-  height: 50px;
 }
 
 ul {
   list-style-type: none;
-  // margin: 0;
-  // padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
+}
+
+.fa-solid {
+  font-size: 25px;
+	background: -webkit-linear-gradient(top right, #CDC6A5, #6F9283);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

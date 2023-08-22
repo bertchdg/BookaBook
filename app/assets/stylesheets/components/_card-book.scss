@@ -1,7 +1,22 @@
+// Index Page, Main Component, Book Card
 .card-book {
-
-  border-radius: 10%;
+  display: flex;
   background-color: pink;
+  box-shadow: 0 0 50px white;
+  border-radius: 20px;
   padding: 30px;
   margin: 20px;
+}
+
+.card-book a {
+  text-decoration: none;
+  color: #6F9283;
+}
+
+.card-book h5 {
+  font-weight: bold;
+}
+
+.card-book h6 {
+  font-style: italic;
 }

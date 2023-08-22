@@ -1,20 +1,21 @@
 <link rel="stylesheet" href="css/style.css">
 
-<h1>Books#index</h1>
+<h1>Bookshelf</h1>
 
-<div class="container">
+<div id="bookshelf">
   <% @books = Book.all %>
   <% @books.each do |book| %>
-      <div class="card-book" class="d-flex align-items-center" >
-        <%= link_to book_path(book), class:"text-decoration-none" do %>
-        <div class="card-category" data-aos="zoom-in"></div>
-        <%= book.title %>
-        <%= book.author %>
-        <% end %>
+      <div class="card-book">
+        <%= link_to book_path(book) do %>
+        <div class="card-category" data-aos="zoom-in">
+          <h5><%= book.title %></h5>
+          <h6><%= book.author %></h6>
+          <% end %>
+        </div>
       </div>
   <% end %>
 </div>
 
-<div class="book-see">
-  <%= link_to "Add a new Book!", new_book_path, class:"btn btn-warning" %>
+<div id="btn-add-book">
+  <%= link_to "AddaBook!", new_book_path %>
 </div>

@@ -1,39 +1,49 @@
-
-.book-see {
-  margin-top: 25px;
-  text-align: center;
-  background-color: #fff;
-  color: #fbadaf;
-  font-weight: 600;
-  padding: 8px;
-  font-size: 14px;
-  width: 160px;
+// Index Page, Bottom, Add a Book, Button
+#btn-add-book {
+  background-color: #696D7D;
+  box-shadow: 0 0 50px white;
   border-radius: 20px;
-  &:hover {
-   color: #ff6e72;
-  }
-  &.book-blue {
-   color: #a4e0eb;
-   &:hover {
-    color: #22cdec;
-   }
-  }
-  &.book-pink {
-   color: #edb9d6;
-   &:hover {
-    color: #ff6dbe;
-   }
-  }
-  &.book-yellow {
-   color: #fdca95;
-   &:hover {
-    color: #fb9124;
-   }
-  }
-  &.book-purple {
-   color: #cbb5e2;
-   &:hover {
-    color: #a764ec;
-   }
-  }
- }
+  margin: 30px auto;
+  padding: 8px;
+  width: 160px;
+
+  font-size: 16px;
+  text-align: center;
+
+  // transition: 1s ease;
+}
+
+#btn-add-book a:hover {
+  font-style: italic;
+}
+
+  // &.book-blue {
+  //  color: #a4e0eb;
+  //  &:hover {
+  //   color: #22cdec;
+  //  }
+  // }
+  // &.book-pink {
+  //  color: #edb9d6;
+  //  &:hover {
+  //   color: #ff6dbe;
+  //  }
+  // }
+  // &.book-yellow {
+  //  color: #fdca95;
+  //  &:hover {
+  //   color: #fb9124;
+  //  }
+  // }
+  // &.book-purple {
+  //  color: #cbb5e2;
+  //  &:hover {
+  //   color: #a764ec;
+  //  }
+  // }
+
+#btn-add-book a {
+  text-decoration: none;
+  color: #CDC6A5;
+  font-weight: bold;
+}
