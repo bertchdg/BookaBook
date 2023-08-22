@@ -1,15 +1,14 @@
-<h1>Books#index</h1>
-<% @books = Book.all %>
-  <div class="row">
-    <% @books.each do |book| %>
-      <div class="container">
-        <%= link_to book_path(book), class:"text-decoration-none" do %>
-          <div class="card-category" data-aos="zoom-in">
-            <%= book.name %>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
+<link rel="stylesheet" href="css/style.css">
 
+<h1>Books#index</h1>
+<div class="container">
+  <% @books = Book.all %>
+  <% @books.each do |book| %>
+    <div class="card-book">
+      <%= link_to book_path(book), class:"text-decoration-none" do %>
+      <div class="card-category" data-aos="zoom-in">
+      <%= book.name %>
+    </div>
+   <% end %>
+</div>
 <%= link_to "Add a new Book!", new_book_path, class:"btn btn-warning" %>
