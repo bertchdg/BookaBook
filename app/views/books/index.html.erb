@@ -5,12 +5,13 @@
 <div class="container">
   <% @books = Book.all %>
   <% @books.each do |book| %>
-    <div class="card-book">
-      <%= link_to book_path(book), class:"text-decoration-none" do %>
-      <div class="card-category" data-aos="zoom-in"></div>
-      <%= book.title %>
-      <% end %>
-    </div>
+      <div class="card-book" class="d-flex align-items-center" >
+        <%= link_to book_path(book), class:"text-decoration-none" do %>
+        <div class="card-category" data-aos="zoom-in"></div>
+        <%= book.title %>
+        <%= book.author %>
+        <% end %>
+      </div>
   <% end %>
 </div>
 
