@@ -1,14 +1,14 @@
 <link rel="stylesheet" href="css/style.css">
 
 <h1>Books#index</h1>
-
 <div class="container">
   <% @books = Book.all %>
   <% @books.each do |book| %>
     <div class="card-book">
+      <%= link_to book_path(book), class:"text-decoration-none" do %>
+      <div class="card-category" data-aos="zoom-in">
       <%= book.name %>
-      <%= book.author %>
     </div>
    <% end %>
-  <p>This should display the landing page for all users visiting our site, with a list of all sorts of books.</p>
 </div>
+<%= link_to "Add a new Book!", new_book_path, class:"btn btn-warning" %>
