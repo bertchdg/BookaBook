@@ -1,0 +1,6 @@
+<h1>Books#index</h1>
+<% @books = Book.all %>
+  <% @books.each do |book| %>
+    <%= book.title %>
+  <% end %>
+<p>This should display the landing page for all users visiting our site, with a list of all sorts of books.</p>
