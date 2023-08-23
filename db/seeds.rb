@@ -30,5 +30,16 @@ Book.create!(title: "The Hunger Games", author: "Suzanne Collins", user: nicole,
 Book.create!(title: "Gone Girl", author: "Gillian Flynn", user: irene, genre: "thriller")
 Book.create!(title: "The Night Circus", author: "Erin Morgenstern", user: brett, genre: "fantasy")
 Book.create!(title: "Circe", author: "Madeline Miller", user: brett, genre: "mythological fiction")
+Book.create!(title: "Meditations", author: "Marcus Aurelius", user: irene, genre: "philosophy")
+Book.create!(title: "Thus Spoke Zarathustra", author: "Friedrich Nietzsche", user: irene, genre: "philosophy")
+Book.create!(title: "The Republic", author: "Plato", user: irene, genre: "philosophy")
+Book.create!(title: "Beyond Good and Evil", author: "Friedrich Nietzsche", user: irene, genre: "philosophy")
+Book.create!(title: "Critique of Pure Reason", author: "Immanuel Kant", user: irene, genre: "philosophy")
+Book.create!(title: "The Art of War", author: "Sun Tzu", user: irene, genre: "philosophy")
+Book.create!(title: "Veinte poemas de amor y una canción desesperada", author: "Pablo Neruda", user: irene, genre: "poetry")
+Book.create!(title: "Cien sonetos de amor", author: "Pablo Neruda", user: irene, genre: "poetry")
+Book.create!(title: "Soledades, galerías y otros poemas", author: "Antonio Machado", user: irene, genre: "poetry")
+Book.create!(title: "Poeta en Nueva York", author: "Federico García Lorca", user: irene, genre: "poetry")
+Book.create!(title: "Poesía completa", author: "Julia de Burgos", user: irene, genre: "poetry")
 
 puts "Done 🪄"

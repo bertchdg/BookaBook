@@ -1,13 +1,26 @@
 // Banner - Logo, Welcome, Login
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
   background: white;
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 3px white;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar .navbar-brand img {
+  width: 60px;
 }
+
+// .navbar-toggler,
+// .navbar-collapse,
+// .navbar-toggler:active {
+//   box-shadow: none;
+//   border: none;
+//   outline: none;
+// }

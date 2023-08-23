@@ -1,18 +1,21 @@
-<h1>Books#show</h1>
+<h1><%= @book.title %></h1>
 
-<div>
-  <h5>Title:</h5>
-  <p><%= @book.title %></p>
-  <h5>Author: </h5>
-  <p><%= @book.author %></p>
-  <h5>Genre: </h5>
-  <p><%= @book.genre %></p>
-</div>
+<div class="details-container">
+  <div class="book-cover">
 
-<div class="btn btn-warning"><%= link_to "Book this Book" %></div>
-<%# # BRETT WILL BE ADDING CODE HERE %>
-<%= render "shared/booking", booking: @booking %>
-
-<div class="card-body p-1 m-2">
-    <%= link_to "Back to books", root_path %>
   </div>
+  <div class="m-4">
+    <h5><%= @book.author %></h5>
+    <h5><em><%= @book.genre %></em></h5>
+  </div>
+  <div class="details-descrip">
+
+  </div>
+</div>
+<%= render "shared/booking", booking: @booking %>
+<div class="book-see mt-5 mb-5"><%= link_to "Book this Book" %></div>
+
+<div class="book-see mb-5">
+  <i class="fa-solid fa-backward"></i>
+  <%= link_to "Bookshelf", root_path %>
+</div>

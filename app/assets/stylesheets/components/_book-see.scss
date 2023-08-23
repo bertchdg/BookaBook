@@ -1,0 +1,20 @@
+.book-see {
+  margin: auto;
+  text-align: center;
+  background-color: #696D7D;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 16px;
+  width: 160px;
+  border-radius: 20px;
+  box-shadow: 0 0 90px white;
+}
+
+.book-see a {
+  color: #F0DCCA;
+  text-decoration: none;
+}
+
+.book-see a:hover {
+  font-style: italic;
+}
