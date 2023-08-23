@@ -11,6 +11,12 @@
   <div class="details-descrip">
 
   </div>
+<!-- app/views/flats/index.html.erb -->
+<!-- [...] -->
+<div style="width: 100%; height: 600px;"
+  data-controller="map"
+  data-map-markers-value="<%= @markers.to_json %>"
+  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
 <%= render "shared/booking", booking: @booking %>
 <div class="book-see mt-5 mb-5"><%= link_to "Book this Book" %></div>
