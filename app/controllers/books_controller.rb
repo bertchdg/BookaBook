@@ -2,6 +2,7 @@ class BooksController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_book, only: [:show, :edit, :update, :destroy]
   def index
+    @books = Book.all
   end
 
   def show
