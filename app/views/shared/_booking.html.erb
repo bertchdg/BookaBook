@@ -1,0 +1,5 @@
+<%= simple_form_for [@book, @booking] do |f| %>
+  <%= f.input :borrow_from,  as: :string, input_html: { data: { controller: "datepicker" } } %>
+  <%= f.input :return_on, as: :string, input_html: { data: { controller: "datepicker" } } %>
+  <%= f.button :submit %>
+<% end %>
