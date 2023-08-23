@@ -6,6 +6,8 @@ class BooksController < ApplicationController
   end
 
   def show
+    # The `geocoded` scope filters only books with coordinates
+    @markers = [{ lat: @book.latitude, lng: @book.longitude }]
   end
 
   def new
