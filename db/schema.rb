@@ -35,7 +35,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_24_094609) do
     t.float "latitude"
     t.float "longitude"
     t.string "address"
-    t.string "Synopsis"
+    t.string "synopsis"
     t.index ["user_id"], name: "index_books_on_user_id"
   end
 
