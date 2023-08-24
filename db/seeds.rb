@@ -13,12 +13,12 @@ nicole = User.create!(email: "nicole@bookabook.com", password: "password", usern
 puts "Creating Books 📖 📚 📇"
 sleep(1)
 Book.create!(
-  title: "Harry Potter",
-  author: "JK Rowling",
+  title: "Sorrow and Bliss",
+  author: "Meg Mason",
   user: nadja,
-  genre: "Fantasy",
+  genre: "Fiction",
   address: "25 Alexanderplatz, Berlin",
-  synopsis: "Follow the young wizard Harry Potter as he embarks on a magical journey to learn about his true heritage and battle the dark forces threatening his world."
+  synopsis: "This novel is about a woman called Martha. She knows there is something wrong with her but she doesn't know what it is. Her husband Patrick thinks she is fine. He says everyone has something, the thing is just to keep going. Martha told Patrick before they got married that she didn't want to have children. He said he didn't mind either way because he has loved her since he was fourteen and making her happy is all that matters, although he does not seem able to do it. By the time Martha finds out what is wrong, it doesn't really matter anymore. It is too late to get the only thing she has ever wanted. Or maybe it will turn out that you can stop loving someone and start again from nothing - if you can find something else to want."
 )
 Book.create!(
   title: "Klara and the Sun",
