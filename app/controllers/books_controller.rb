@@ -28,6 +28,14 @@ class BooksController < ApplicationController
       render "books", status: :unprocessable_entity
     end
   end
+
+  def destroy
+    @book = Book.find(params[:id])
+    @book.destroy
+    redirect_to lending_path, status: :see_other
+    # notice: 'Book was successfully deleted.'
+  end
+
 end
 
 private

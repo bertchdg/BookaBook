@@ -7,6 +7,7 @@
     <% @books.each do |book| %>
       <div class="card-book mx-2 my-3">
         <%= link_to book_path(book), class: "h-100 w-100" do %>
+        
         <%# Needs to be updated with cl_image_tag (cloudinary) %>
           <div class="card-containerr">
             <div class="cover"></div>
