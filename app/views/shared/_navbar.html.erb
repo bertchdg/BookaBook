@@ -1,9 +1,8 @@
 <div class="navbar d-flex navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
+  <%# <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "logo.png" %>
-    <% end %>
-
+      <%# <%= image_tag "logo.png" %>
+    <%# <% end %>
   <%= form_with url: books_path, method: :get, class: "d-flex" do %>
       <%= text_field_tag :query,
             params[:query],
@@ -17,7 +16,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i id="menu" class="fa-solid fa-bars"></i>
     </button>
-
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
