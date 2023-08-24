@@ -1,5 +1,13 @@
-<%= simple_form_for [@book, @booking] do |f| %>
-  <%= f.input :borrow_from,  as: :string, input_html: { data: { controller: "datepicker" } } %>
-  <%= f.input :return_on, as: :string, input_html: { data: { controller: "datepicker" } } %>
-  <%= f.button :submit %>
-<% end %>
+<div class="mx-5">
+  <%= simple_form_for [@book, @booking] do |f| %>
+
+    <h2><%= f.input :borrow_from,  as: :string, input_html: { data: { controller: "datepicker" } } %></h2>
+    <h2><%= f.input :return_on, as: :string, input_html: { data: { controller: "datepicker" } } %></h2>
+
+    <div class="text-center">
+    <div class="btn btn-light rounded-pill">
+    <%= f.button :submit %>
+    </div>
+    </div>
+  <% end %>
+</div>

@@ -19,9 +19,7 @@
   data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
 <%= render "shared/booking", booking: @booking %>
-<div class="book-see mt-5 mb-5"><%= link_to "Book this Book" %></div>
-
-<div class="book-see mb-5">
+<div class="book-see mb-5 mt-5">
   <i class="fa-solid fa-backward"></i>
   <%= link_to "Bookshelf", root_path %>
 </div>
