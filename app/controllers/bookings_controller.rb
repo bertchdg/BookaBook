@@ -1,14 +1,22 @@
 class BookingsController < ApplicationController
-  before_action :set_book, only: [:show, :edit, :update, :destroy]
+  before_action :set_book, only: [:show, :edit, :update, :destroy, :create]
 
   def create
     @booking = Booking.new(booking_params)
     @booking.book = Book.find(params[:book_id])
     @booking.user_id = current_user.id
-    if @booking.save
-      redirect_to book_path(@booking.book)
-    else
+    borrow_date = DateTime.strptime(params[:booking][:borrow_from], '%Y-%m-%d')
+    @bookings = @book.bookings.where("return_on > ?", borrow_date)
+    if !@bookings.empty?
+      flash.alert = "This book is unavailable for your selected dates. Please try again."
       render "books/show", status: :unprocessable_entity
+    else
+      if @booking.save
+        flash.notice = "Your booking request was successful!"
+        redirect_to borrowing_path
+      else
+        render "books/show", status: :unprocessable_entity
+      end
     end
   end
 
