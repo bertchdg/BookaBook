@@ -51,3 +51,19 @@ a {
 a:hover {
   font-style: italic;
 }
+
+.alert-info {
+  border-radius: 15px;
+  background: white;
+  color: black;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+
+.alert-warning {
+  border-radius: 15px;
+  background: rgb(91, 27, 27);
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}

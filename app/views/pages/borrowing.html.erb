@@ -1,5 +1,4 @@
 <h1>read</h1>
-<p>Find me in app/views/pages/borrowing.html.erb</p>
 <% @bookings.each do |booking| %>
 <%= booking.book.title %>
 <% end %>
@@ -12,8 +11,9 @@
         <%# Needs to be updated with cl_image_tag (cloudinary) %>
           <div class="card-containerr">
             <div class="cover"></div>
-            <%# <p class="card-title fw-bold mt-2"><%= booking.book_id[:title.truncate(23) %></p>
-            <%# <p class="card-text m-0"><%= booking.book_id.author.truncate(13) %></p>
+            <p class="card-title fw-bold mt-2"><%= booking.book.title.truncate(23) %></p>
+            <p class="card-text m-0">Borrow:<br><%= booking.borrow_from %></p>
+            <p class="card-text m-0">Return:<br><%= booking.return_on %></p>
           </div>
         <% end %>
       </div>

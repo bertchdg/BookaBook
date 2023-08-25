@@ -1,8 +1,19 @@
 class BookingsController < ApplicationController
-  before_action :set_book, only: [:show, :update, :destroy, :create]
+  before_action :set_book, only: [:show, :update, :destroy, :create, :edit]
 
   def show
     @booking = Booking.find(params[:id])
+  end
+
+  def edit
+    @booking = Booking.find(params[:id])
+  end
+
+  def update
+    @booking = Booking.find(params[:id])
+    @booking.update(booking_params)
+    redirect_to borrowing_path
+    flash.notice = "Your booking was successfully updated!"
   end
 
   def create
@@ -24,8 +35,6 @@ class BookingsController < ApplicationController
     end
   end
 
-
-
   private
 
   def set_book
@@ -33,6 +42,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:borrow_from, :return_on, :book_id)
+    params.require(:booking).permit(:borrow_from, :return_on, :book_id, :booking_id)
   end
 end

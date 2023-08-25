@@ -1,2 +1,23 @@
-<h1>Booking Page</h1>
-<p>Find me in app/views/bookings/show.html.erb</p>
+<h1><%= @book.title %></h1>
+  <p class="card-text m-0"><strong>Borrowing from: </strong><%= @booking.borrow_from %></p>
+  <p class="card-text m-0"><strong>Return this book by: </strong><%= @booking.return_on %></p>
+<div class="details-container">
+  <div class="book-cover">
+
+  </div>
+  <div class="m-4">
+    <h5><strong><%= @book.author %></strong></h5>
+    <h5><%= @book.genre %></h5>
+    <p><em><%= @book.synopsis %></em></p>
+  </div>
+  <div class="details-descrip">
+
+  </div>
+  <h1>Update this booking</h1>
+  <br>
+<%= render "shared/booking", booking: @booking %>
+
+<div class="book-see mb-5 mt-5">
+  <i class="fa-solid fa-backward"></i>
+  <%= link_to "Bookshelf", borrowing_path %>
+</div>
