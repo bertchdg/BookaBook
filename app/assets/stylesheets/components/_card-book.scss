@@ -2,12 +2,13 @@
   border-radius: 10px;
   // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   // background-color: rgba(246, 245, 245, 0.997);
-  box-shadow: rgba(250, 249, 249, 0.35) 0px 5px 15px;
+  // box-shadow: rgba(250, 249, 249, 0.35) 0px 5px 15px;
   background: transparent;
   width: 10rem;
   height: 200px;
   scale: 0.9;
   transition: all 0.2s;
+
 
   &:hover {
     scale: 1;
@@ -20,16 +21,20 @@
   }
 
   .cover {
-    background-image: url(https://images.unsplash.com/photo-1633580969859-ee2aa7fd2648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by);
+    // background-image: url(https://images.unsplash.com/photo-1633580969859-ee2aa7fd2648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by);
     width: 92%;
-    height: 50%;
+    height: 65%;
     background-position: center;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 5px;
   }
-  .card-containerr {
+  .card-container {
     margin: 6px 8px;
     width: 98%;
     height: 100%;
   }
+}
+
+#bookcover {
+  width: 100px;
 }
