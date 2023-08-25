@@ -199,7 +199,7 @@ collins = Book.create!(
   address: "2 Altenbraker Straße, Berlin",
   synopsis: "Enter the gripping world of Panem, where Katniss Everdeen volunteers to participate in the brutal Hunger Games in order to protect her younger sister, and becomes a symbol of rebellion."
 )
-collins.cover.attach(io: URI.open(book_covers[14]), filename: "The Hunger Games", content_type: "image/jpg")
+collins.cover.attach(io: URI.open(book_covers[15]), filename: "The Hunger Games", content_type: "image/jpg")
 collins.save
 
 flynn = Book.create!(
@@ -210,7 +210,7 @@ flynn = Book.create!(
   address: "8 Weserstraße, Berlin",
   synopsis: "Unravel the mystery behind the disappearance of Amy Dunne and the subsequent media frenzy, as Nick Dunne becomes the prime suspect in a thrilling tale of deceit, manipulation, and unexpected twists."
 )
-flynn.cover.attach(io: URI.open(book_covers[15]), filename: "Gone Girl", content_type: "image/jpg")
+flynn.cover.attach(io: URI.open(book_covers[14]), filename: "Gone Girl", content_type: "image/jpg")
 flynn.save
 
 morgenstern = Book.create!(

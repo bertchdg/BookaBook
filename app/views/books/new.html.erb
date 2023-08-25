@@ -6,6 +6,7 @@
       <h6><%= f.input :title %></h6>
       <h6><%= f.input :author %></h6>
       <h6><%= f.input :genre %></h6>
+      <h6><%= f.input :cover, as: :file %></h6>
       <div class="share-submit">
         <%= f.submit "share", class: "share-button", html: { color: "white" } %>
       </div>
