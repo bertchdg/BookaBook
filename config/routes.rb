@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "books#index"
-
+  
   resources :books, only: %i[index show new create edit update destroy] do
     resources :bookings, only: %i[create edit update show]
   end
@@ -11,5 +11,4 @@ Rails.application.routes.draw do
   get 'lending', to: 'pages#lending'
   get 'borrowing', to: 'pages#borrowing'
 
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 end
