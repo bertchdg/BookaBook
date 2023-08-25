@@ -1,0 +1,10 @@
+<h1>Edit Book</h1>
+
+<%= simple_form_for [@book] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :genre %>
+  <%= f.submit "Edit Book :)))))", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Cancel", books_path %>

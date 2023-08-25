@@ -29,11 +29,21 @@ class BooksController < ApplicationController
     end
   end
 
+  def edit
+    @book = Book.find(params[:id])
+  end
+  
+  def update
+    @book = Book.find(params[:id].to_i)
+    @book.update(book_params)
+    redirect_to lending_path(@book)
+  end
+    
   def destroy
     @book = Book.find(params[:id])
     @book.destroy
     redirect_to lending_path, status: :see_other
-    # notice: 'Book was successfully deleted.'
+    flash.notice = 'Book was successfully deleted.'
   end
 
 end
@@ -47,3 +57,5 @@ end
 def book_params
   params.require(:book).permit(:title, :author, :genre)
 end
+
+
