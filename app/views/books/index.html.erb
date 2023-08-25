@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="css/style.css">
 
-<div class="container">
-<h1>bookshelf</h1>
+<h1>discover</h1>
 
 <div class="container">
   <div class="d-flex flex-wrap center-margin mb-3">
@@ -9,7 +8,6 @@
       <div class="card-book mx-2 my-2">
         <%= link_to book_path(book), class: "h-100 w-100" do %>
 
-        <%# Needs to be updated with cl_image_tag (cloudinary) %>
           <div class="card-containerr">
             <div class="cover">
               <% if book.cover.attached? %>
