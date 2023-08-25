@@ -2,7 +2,7 @@
   border-radius: 10px;
   // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   // background-color: rgba(246, 245, 245, 0.997);
-  box-shadow: rgba(250, 249, 249, 0.35) 0px 5px 15px;
+  // box-shadow: rgba(250, 249, 249, 0.35) 0px 5px 15px;
   background: transparent;
   width: 10rem;
   height: 200px;
@@ -27,9 +27,13 @@
     background-size: cover;
     border-radius: 5px;
   }
-  .card-containerr {
+  .card-container {
     margin: 6px 8px;
     width: 98%;
     height: 100%;
   }
+}
+
+#bookcover {
+  width: 100px;
 }

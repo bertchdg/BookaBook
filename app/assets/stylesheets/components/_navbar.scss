@@ -10,6 +10,10 @@
   z-index: 1100;
 }
 
+.navbar a {
+  color: white;
+}
+
 .navbar .navbar-collapse {
   flex-grow: 0;
 }
@@ -18,10 +22,6 @@
   width: 60px;
 }
 
-// #search-submit {
-//   border-radius: 50px;
-// }
-
 .btn-search {
   background: transparent;
   color: white;
@@ -29,14 +29,29 @@
   border-color: white
 }
 
-.form-control {
-  background: transparent;
+#search-input {
+  background-color: transparent;
+  border-radius: 50px;
+  width: auto;
+  padding: 5px;
+  margin-right: 10px;
+  color: white;
+  border: 1px solid white;
 }
 
-// .navbar-toggler,
-// .navbar-collapse,
-// .navbar-toggler:active {
-//   box-shadow: none;
-//   border: none;
-//   outline: none;
-// }
+#search-submit {
+  border-radius: 50px;
+}
+
+.fa-magnifying-glass {
+  height: 4px;
+}
+
+#magnify {
+  background-color: transparent;
+  border-radius: 50px;
+  width: auto;
+  margin-right: 3px;
+  color: white;
+  border: hidden;
+}
