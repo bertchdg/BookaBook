@@ -1,21 +1,25 @@
 <h1>share</h1>
 
-<div class="container">
+<div class="container container-keep">
   <div class="d-flex flex-wrap center-margin mb-3">
     <% @books.each do |book| %>
       <div class="card-book mx-2 my-3">
         <%= link_to book_path(book), class: "h-100 w-100" do %>
-        <%# Needs to be updated with cl_image_tag (cloudinary) %>
-          <div class="card-containerr">
-            <div class="cover"></div>
-            <p class="card-title fw-bold mt-2"><%= book.title.truncate(23) %></p>
 
-            <p class="card-text m-0">🖋 <%= book.author.truncate(13) %></p>
-        <td><%= link_to 'Delete book', book_path(book), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></td>
-
+          <div class="card-container">
+            <div class="cover">
+              <% if book.cover.attached? %>
+                <%= cl_image_tag book.cover.key, crop: :fill, class: "cover" %>
+              <% else %>
+                <img class="cover" src="https://images.unsplash.com/photo-1633580969859-ee2aa7fd2648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by" alt="Default Book Cover" class="cover">
+              <% end %>
+            </div>
+            <p class="card-title fw-bold mt-1"><%= book.title.truncate(23) %></p>
+            <p class="card-text mb-1"><%= book.author.truncate(13) %></p>
+        <td><%= link_to 'Delete book', book_path(book), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></td><br>
+        <%= link_to "Edit book", edit_book_path(book) %>
           </div>
         <% end %>
-        <%= link_to "Edit book", edit_book_path(book) %>
       </div>
     <% end %>
   </div>
