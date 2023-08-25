@@ -1,10 +1,10 @@
 
-<div class="details-container container">
+<div class="details-container show-container">
   <h1><%= @book.title %></h1>
   <div class="book-cover">
 
   </div>
-  <div class="m-4 container details-container">
+  <div class="m-4 show-container details-container">
     <h5><strong><%= @book.author %></strong></h5>
     <h5><%= @book.genre %></h5>
     <p><em><%= @book.synopsis %></em></p>
@@ -13,14 +13,14 @@
 
   </div>
 
-<div class="book-map container" style="width: 300px; height: 300px"
+<div class="book-map show-container" style="width: 300px; height: 300px"
 
   data-controller="map"
   data-map-markers-value="<%= @markers.to_json %>"
   data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
 <%= render "shared/booking", booking: @booking %>
-<div class="book-see mb-5 mt-5 container">
+<div class="book-see mb-5 mt-5 show-container">
   <i class="fa-solid fa-backward"></i>
   <%= link_to "Bookshelf", root_path %>
 </div>
