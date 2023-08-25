@@ -1,10 +1,18 @@
-<h1>New Book</h1>
+<div class="form_container">
+  <h1>share book</h1>
 
-<%= simple_form_for [@book] do |f| %>
-  <%= f.input :title %>
-  <%= f.input :author %>
-  <%= f.input :genre %>
-  <%= f.submit "Add Book :)))))", class: "btn btn-primary" %>
-<% end %>
+  <div class ="share_form">
+    <%= simple_form_for [@book] do |f| %>
+      <h6><%= f.input :title %></h6>
+      <h6><%= f.input :author %></h6>
+      <h6><%= f.input :genre %></h6>
+      <div class="share-submit">
+        <%= f.submit "share", class: "share-button", html: { color: "white" } %>
+      </div>
+    <% end %>
+    <div id="cancel-button">
+      <h6><%= link_to "cancel", books_path %></h6>
+    </div>
+  </div>
 
-<%= link_to "Cancel", books_path %>
+</div>

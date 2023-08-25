@@ -1,0 +1,52 @@
+.share_form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  // margin: ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.share_form input[type="text"] {
+  background: transparent;
+  border: 1px auto white;
+  border-radius: 50px;
+  color: white;
+}
+
+.share_form .share-button {
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 16px;
+  width: 160px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px white;
+  color: white !important;
+}
+
+.share_form .share-button:hover {
+  font-style: italic;
+  color: white;
+}
+
+.share-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom:40px;
+  color:white;
+}
+
+#cancel-button a {
+  text-align: center;
+  transform: 1s ease;
+  color:white;
+}
+
+#cancel-button a:hover {
+  font-style: italic;
+}
