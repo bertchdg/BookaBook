@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/style.css">
 
-<h1>bookshelf</h1>
+<h1>discover</h1>
 
 <div class="container">
   <div class="d-flex flex-wrap center-margin mb-3">
@@ -9,8 +9,10 @@
         <%= link_to book_path(book), class: "h-100 w-100" do %>
 
         <%# Needs to be updated with cl_image_tag (cloudinary) %>
-          <div class="card-containerr">
-            <div class="cover"></div>
+          <div class="card-container">
+            <%# <div id="bookcover">
+              <%= cl_image_tag(book.cover) %>
+            <%# </div> %>
             <p class="card-title fw-bold mt-2"><%= book.title.truncate(23) %></p>
             <p class="card-text m-0"><%= book.author.truncate(13) %></p>
           </div>
