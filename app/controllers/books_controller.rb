@@ -38,6 +38,13 @@ class BooksController < ApplicationController
     @book.update(book_params)
     redirect_to lending_path(@book)
   end
+    
+  def destroy
+    @book = Book.find(params[:id])
+    @book.destroy
+    redirect_to lending_path, status: :see_other
+    flash.notice = 'Book was successfully deleted.'
+  end
 
 end
 

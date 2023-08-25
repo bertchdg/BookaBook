@@ -12,18 +12,29 @@
 @import "components/index";
 @import "pages/index";
 
+// Your Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Noto+Serif+Vithkuqi&family=Playfair+Display&display=swap');
+
+
+p {
+  color: white
+}
+
+
 h1 {
   text-align: center;
-  font-weight: bold;
-  color: #696D7D;
+  // font-weight: bold;
+  font-size: 40px;
+  color: white;
+  font-style: 'Borel', cursive;
 }
 
 h2 {
   text-align: center;
   font-weight: bold;
-  color: #696D7D;
+  color: white;
 }
 
 body {
-  background-color: #CDC6A5;
+  background-color: black;
 }

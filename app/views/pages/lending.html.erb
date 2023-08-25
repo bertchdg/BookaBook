@@ -15,6 +15,7 @@
         <% end %>
         <%= link_to "Edit book", edit_book_path(book) %>
       </div>
+        <td><%= link_to 'Delete', book_path(book), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></td>
     <% end %>
   </div>
 </div>

@@ -1,9 +1,10 @@
 // Banner - Logo, Welcome, Login
 .navbar {
-  justify-content: space-between;
-  background: white;
-  margin-bottom: 30px;
-  box-shadow: 0px 3px 3px white;
+  justify-content: space-around;
+  background: black;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  box-shadow: 0px 3px 3px black;
   position: sticky;
   top: 0;
   z-index: 1100;
@@ -19,14 +20,13 @@
 
 .btn-search {
   background: transparent;
-  color: black;
+  color: white;
   border-radius: 20%;
-  border-color: grey
+  border-color: white
 }
 
 .form-control {
   background: transparent;
-  
 }
 
 // .navbar-toggler,
