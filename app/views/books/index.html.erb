@@ -5,15 +5,15 @@
 <div class="container">
   <div class="d-flex flex-wrap center-margin mb-3">
     <% @books.each do |book| %>
-      <div class="card-book mx-2 my-2">
+      <div class="card-book mx-2 my-3">
         <%= link_to book_path(book), class: "h-100 w-100" do %>
 
-          <div class="card-containerr">
+          <div class="card-container">
             <div class="cover">
               <% if book.cover.attached? %>
                 <%= cl_image_tag book.cover.key, crop: :fill, class: "cover" %>
               <% else %>
-                <img src="https://images.unsplash.com/photo-1633580969859-ee2aa7fd2648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by" alt="Default Book Cover" class="cover">
+                <img class="cover" src="https://images.unsplash.com/photo-1633580969859-ee2aa7fd2648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by" alt="Default Book Cover" class="cover">
               <% end %>
             </div>
             <p class="card-title fw-bold mt-1"><%= book.title.truncate(23) %></p>
