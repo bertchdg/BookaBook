@@ -28,6 +28,17 @@ class BooksController < ApplicationController
       render "books", status: :unprocessable_entity
     end
   end
+
+  def edit
+    @book = Book.find(params[:id])
+  end
+  
+  def update
+    @book = Book.find(params[:id].to_i)
+    @book.update(book_params)
+    redirect_to lending_path(@book)
+  end
+
 end
 
 private
@@ -39,3 +50,5 @@ end
 def book_params
   params.require(:book).permit(:title, :author, :genre)
 end
+
+
