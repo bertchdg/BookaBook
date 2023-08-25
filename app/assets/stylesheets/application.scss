@@ -14,12 +14,12 @@
 
 // Your Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Noto+Serif+Vithkuqi&family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Rajdhani&display=swap');
 
 p {
-  color: white
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
 }
-
 
 h1 {
   text-align: center;
@@ -39,6 +39,10 @@ body {
   background-color: black;
 }
 
-h5 {
+h5, h6 {
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
