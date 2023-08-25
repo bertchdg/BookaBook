@@ -1,5 +1,4 @@
-<h1>Lending Page</h1>
-<p>Find me in app/views/pages/lending.html.erb</p>
+<h1>Lending</h1>
 
 <div class="container">
   <div class="d-flex flex-wrap center-margin mb-3">
@@ -11,10 +10,10 @@
             <div class="cover"></div>
             <p class="card-title fw-bold mt-2"><%= book.title.truncate(23) %></p>
             <p class="card-text m-0">🖋 <%= book.author.truncate(13) %></p>
+        <td><%= link_to 'Delete book', book_path(book), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></td>
           </div>
         <% end %>
       </div>
-        <td><%= link_to 'Delete', book_path(book), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></td>
     <% end %>
   </div>
 </div>
